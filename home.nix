@@ -1,6 +1,10 @@
-{ config, pkgs, pkgs-unstable, ... }:
+{ config, pkgs, pkgs-unstable, inputs, ... }:
 
 {
+  imports = [
+    inputs.zen-browser.homeModules.beta
+  ];
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "tinbolw";
@@ -73,4 +77,8 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+  programs.zen-browser = {
+    enable = true;
+    setAsDefaultBrowser = true;
+  };
 }
