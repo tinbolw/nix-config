@@ -14,7 +14,6 @@
       fastfetch
       chezmoi
       zoxide
-      keychain
       bitwarden-desktop
       # # Adds the 'hello' command to your environment. It prints a friendly
       # # "Hello, world!" when run.
@@ -34,5 +33,6 @@
       # '')
     ])
     ++ (with pkgs-unstable; [
+      keychain
     ]);
 }
