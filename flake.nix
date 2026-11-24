@@ -16,6 +16,9 @@
         home-manager.follows = "home-manager";
       };
     };
+    hermes-agent = {
+      url = "github:NousResearch/hermes-agent";
+    };
   };
 
   outputs =

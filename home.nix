@@ -10,6 +10,7 @@
   imports = [
     ./modules
     inputs.zen-browser.homeModules.beta
+    inputs.hermes-agent.homeManagerModules.default
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
